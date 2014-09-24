@@ -25,12 +25,11 @@ $(document).ready(function() {
         }
       };
 
-  $('.next').on('click', 'button', function() {
-    $(this).closest('.next').find('.race').slideDown();
+  $('button').click(function() {
+    $('.race').slideDown();
   });
 
-  $('.next').on('click', 'button', function() {
-
+  $('.rabbit,.turtle,.wolf').click(function() {
   var rabbit = new Animal ("Rocky the Bunny", 8, 4);
   var turtle = new Animal ("Myrtle the Turtle", 3, 7);
   var wolf = new Animal ("Big Bad Wolf", 6, 8);
@@ -41,9 +40,9 @@ $(document).ready(function() {
       rabbit.advance();
       turtle.advance(); 
       wolf.advance();
-      $('#rabbit').css('right', rabbit.position + 'px');
-      $('#turtle').css('right', turtle.position + 'px');    
-      $('#wolf').css('right', wolf.position + 'px');
+      $('.rabbit').css('right', rabbit.position + 'px');
+      $('.turtle').css('right', turtle.position + 'px');    
+      $('.wolf').css('right', wolf.position + 'px');
       }
     else {
       clearInterval(timerId);
