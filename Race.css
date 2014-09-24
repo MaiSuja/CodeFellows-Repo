@@ -57,10 +57,10 @@ button {
   background-opacity: .7;
   height: 75px;
   width: 350px;
-  position: fixed;
+  position: relative;
   top: 50%;
   left: 50%;
-  margin-top: 175px;
+  margin-top: 5px;
   margin-left: -100px;  
   text-align: center;
   font-family: Verdana;
@@ -79,8 +79,8 @@ button {
   color: #FFFFFF;
   font-size: 1em;
   font-weight: bold;
-  margin-top: 100px;
-  padding-top: 50px;
+  margin-top: 5px;
+  padding-top: 5px;
   margin-bottom: auto;
   max-width: 100%;
 
